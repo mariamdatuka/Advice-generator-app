@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: hsl(218, 23%, 16%);
+  font-family: "Manrope", sans-serif;
+}
+
+.main-flex {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  background-color: hsl(217, 19%, 24%);
+  width: 92%;
+  max-width: 54rem;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 4rem 2rem 6.4rem 2rem;
+}
+
+.header {
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+  font-size: 1.2rem;
+  color: hsl(150, 100%, 66%);
+  letter-spacing: 2px;
+}
+
+.queto {
+  margin: 0 3rem;
+  margin-bottom: 7rem;
+  font-size: 2.8rem;
+  height: 13rem;
+  color: hsl(193, 38%, 86%);
+}
+
+.divide-desktop {
+  margin-bottom: 4rem;
+}
+
+.divide-mobile {
+  display: none;
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+  left: 24rem;
+  bottom: -7%;
+}
+
+.btn-img {
+  margin-top: 1.8rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0 3rem hsla(150, 100%, 66%, 0.75);
+}
+
+@media screen and (max-width: 390px) {
+  .divide-desktop {
+    display: none;
+  }
+
+  .divide-mobile {
+    display: block;
+  }
+
+  .header {
+    margin-top: 2rem;
+  }
+
+  .btn {
+    width: 5rem;
+    height: 5rem;
+    transform: translateX(-8.5rem);
+  }
+
+  .btn-img {
+    margin-top: 1.3rem;
+  }
+
+  .queto {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .btn {
+    transform: translateX(-9.5rem);
+  }
+}
